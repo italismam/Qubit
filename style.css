@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.top-bar{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+.top-bar__image{
+    max-height: 29px;
+}
+.top-bar__list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: #1C1C1C;
+    font-size: 14px;
+    column-gap: 62px;
+}
+.top-bar__menu{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 25px;
+}
+.top-bar__button{
+    border: none;
+    padding: 13px 34px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.main-intro{
+    background-image: url(Images/background-image.svg);
+    background-size: cover;
+    height: 695px;
+}
+.main-intro__left-side{
+    display: flex;
+    flex-direction: column;
+    padding: 134px 115px;
+}
+.main-intro__small-text{
+    font-size: 15px;
+}
+.main-intro__title{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 61px;
+    margin: 19px 0 37px 0;
+}
+.main-intro__title span{
+    color: #6F2DFF;
+}
+.main-intro__main-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px
+}
+.main-intro__email{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+}
+.main-intro__input{
+    padding: 12px 26px;
+    color: lightgray;
+    border: 1px solid #6F2CFF;
+    border-radius: 27px 0 0 27px;
+}
+.main-intro__button{
+    border-radius: 0 27px 27px 0;
+}
+
+.brands-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+}
+.brands-list__brands{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 29px;
+    column-gap: 60px;
+    row-gap: 20px;
+}
+.brands-list__brand-image{
+    width: 102px;
+    height: 42px;
+}
+.brands-list__transparent-button{
+    margin-top: 26px;
+}
+
+.grow-statistics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    column-gap: 240px;
+}
+.grow-statistics__buttons{
+    display: flex;
+    column-gap: 22px;
+    margin-top: 58px;
+}
+.grow-statistics__purple-button{
+    border-radius: 27px;
+}
+.grow-statistics__left-side-text{
+    margin-top: 56px;
+}
+.grow-statistics__read-report-button{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 14px;
+    padding: 0;
+}
+.grow-statistics__table{
+    border-collapse: collapse;
+}
+.grow-statistics__number{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+}
+.grow-statistics__table-text{
+    margin-top: 15px;
+}
+.grow-statistics__table td{
+    border-left: 1px solid #E0E0E0;
+}
+.grow-statistics__table-left{
+    padding: 0 108px 116px 17px;
+}
+.grow-statistics__table-right{
+    padding: 0 0 116px 17px;
+}
+.Qubit-commerce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Qubit-commerce__title{
+    margin-top: 94px;
+}
+.Qubit-commerce__subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 22px;
+}
+.Qubit-commerce__blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 130px;
+    row-gap: 50px;
+    margin-top: 58px;
+}
+.Qubit-commerce__block-title{
+    margin-top: 42px;
+}
+.Qubit-commerce__text{
+    margin-top: 16px;
+}
+.browser-screenshot{
+    height: 1064px;
+    background-color:#F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 91px;
+}
+.browser-screenshot__text{
+    margin-top: 28px;
+    text-align: center;
+}
+.browser-screenshot__image{
+    margin-top: 90px;
+}
+.browser-screenshot__buttons{
+    margin-top: 76px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 22px;
+}
+.browser-screenshot__button{
+    border-radius: 27px;
+    padding: 12px 45px;
+}
+.browser-screenshot__transparent-button{
+    color: #6F2CFF;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+.browser-screenshot__transparent-button:hover{
+    color: white;
+    background-color: #6F2CFF;
+    border: none;
+}
+.Qubit-properties{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Qubit-properties__title{
+    margin-top: 94px;
+}
+.Qubit-properties__blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    row-gap: 80px;
+    column-gap: 150px;
+}
+.Qubit-properties__block{
+    width: 276px;
+}
+.Qubit-properties__block-title{
+    line-height: 40px;
+}
+.Qubit-properties__text{
+    margin-top: 15px;
+}
+.brands-slaider{
+    height: 751px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;
+}
+.brands-slaider__blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    column-gap: 40px;
+}
+.brands-slaider__block{
+    width: 320px;
+    height: 438px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(192, 192, 192, 0.5);
+    border-radius: 7px;
+}
+.brands-slaider__logo{
+    margin-top: 25px;
+}
+.brands-slaider__text{
+    margin-top: 25px;
+    color: #6F2CFF;
+    font-weight: 700;
+}
+.Qubit-specialize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 94px;
+    margin-bottom: 100px;
+}
+.Qubit-specialize__subtitle{
+    margin-top: 22px;
+}
+.Qubit-specialize__blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 65px;
+}
+.Qubit-specialize__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 0 0 30px;
+    width: 460px;
+    height: 200px;
+    background-color: #17002E;
+    color: white;
+
+}
+.Qubit-specialize__block-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+.Qubit-specialize__block-button{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    background-color: transparent;
+    color: white;
+    padding: 0 30px 10px 0;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.Qubit-ecosystem{
+    background-color: #F5F5F5;
+    height: 627px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px 0 90px;
+}
+.Qubit-ecosystem__left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Qubit-ecosystem__title{
+    color: #17002E;
+    margin-bottom: 35px;
+}
+.Qubit-ecosystem__text{
+    margin-top: 15px;
+}
+.Qubit-ecosystem__button{
+    margin-top: 74px;
+    border-radius: 30px;
+}
+.Qubit-demo{
+    background-image: url(Images/demobook.svg);
+    background-size: cover;
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.Qubit-demo__title{
+    color: white;
+}
+.Qubit-demo__email{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+}
+.Qubit-demo__input{
+    padding: 12px 100px 12px 26px;
+    color: lightgray;
+    border: 1px solid #6F2CFF;
+    border-radius: 27px 0 0 27px;
+}
+.Qubit-demo__button{
+    border-radius: 0 27px 27px 0;
+}
+.Qubit-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 29px;
+    margin-bottom: 45px;
+}
+.Qubit-contacts__socials{
+    display: flex;
+    flex-direction: row;
+    column-gap: 32px;
+}
+.bottom-bar{
+    height: 547px;
+    background-color: #20003C;
+    color: white;
+}
+.bottom-bar__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bottom-bar__title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 57px;
+}
+.bottom-bar__list{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+.bottom-bar__item{
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.bottom-bar__capabilities-list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 53px;
+}
+.bottom-bar__left-side, .bottom-bar__right-side{
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+}
+.bottom-bar__bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 45px;
+}
+.bottom-bar__copyright{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 22px;
+}
+#title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+}
+#text{
+    font-size: 15px;
+    line-height: 22px;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#purple-button{
+    padding: 12px 45px;
+    border: 1px solid #6F2CFF;
+    color: white;
+    background-color: #6F2CFF;
+    transition: 0.5s;
+}
+#purple-button:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+#transparent-button{
+    border: none;
+    background-color: transparent;
+    padding-bottom: 4px;
+    font-weight: 700;
+    border-bottom: 3px solid #6F2CFF;
+    transition: 0.5s;
+}
+#transparent-button:hover{
+    padding: 12px 45px;
+    background-color: black;
+    color: white;
+    border: 3px solid #6F2CFF;
+    border-radius: 27px;
+}
+a{
+    text-decoration: none;
+    border-radius: 27px;
+}
+
+@media screen and (max-width: 1250px){  
+    .top-bar__list{
+        gap: 40px;
+    }
+    .grow-statistics{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grow-statistics__table{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .top-bar{
+        display: flex;
+        justify-content: space-between;
+    }  
+    .top-bar__list{
+        display: none;
+    } 
+    .top-bar__menu{
+        display: flex;
+    } 
+}
+@media screen and (max-width: 1050px){
+    .brands-slaider{
+        height: auto;
+        padding: 55px 0 55px 0;
+    }
+    .brands-slaider__arrow{
+        display: none;
+    }
+    .brands-slaider__blocks{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .Qubit-ecosystem{
+        display: flex;
+        gap: 100px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .browser-screenshot{
+        height: auto;
+        padding: 55px 0 55px 0;
+    }
+    .browser-screenshot__image{
+        transform: scale(0.7);
+        margin-top: 0;
+    }
+    .browser-screenshot__buttons{
+        margin-top: 0;
+    }
+    .Qubit-ecosystem{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 55px;
+        justify-content: center;
+    }
+    .Qubit-ecosystem__left-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .bottom-bar{
+        height: auto;
+        padding: 55px 0 55px 0;
+    }
+    .bottom-bar__top{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 950px){
+    .main-intro{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .main-intro__email{
+        display: flex;
+        justify-content: center;
+    }
+    .browser-screenshot__image{
+        transform: scale(0.6);
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 900px){
+    .main-intro{
+        height: auto;
+        padding: 55px 0 55px 0;
+    }
+    .top-bar__button{
+        display: none;
+    }
+    .browser-screenshot__image{
+        transform: scale(0.5);
+        margin-top: 0;
+    }
+}
