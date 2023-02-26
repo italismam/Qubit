@@ -608,7 +608,7 @@ a{
         display: none;
     }
     .browser-screenshot__image{
-        transform: scale(0.5);
+        transform: scale(0.3);
         margin-top: 0;
     }
 }
